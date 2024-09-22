@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const sol = document.querySelectorAll(".sol");
 	const dots = document.querySelectorAll(".dots");
 	const countdownElement = document.getElementById("countdown");
-	let countdownTime = 1800,
+	let countdownTime = 10,
 		intervalId; // 60 seconds countdown
 
 	const time_format = (ss) => {
