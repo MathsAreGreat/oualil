@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const sol = document.querySelectorAll(".sol");
 	const dots = document.querySelectorAll(".dots");
 	const countdownElement = document.getElementById("countdown");
-	let countdownTime = 10,
-		intervalId;
+	let countdownTime = 1800;
+	let intervalId;
 
 	const time_format = (ss) => {
 		if (ss < 60) return `${ss.toString().padStart(2, "0")} secondes`;
