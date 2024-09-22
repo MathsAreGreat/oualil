@@ -18,12 +18,10 @@ window.MathJax = {
 })();
 
 const simplifySqrt = (b) => {
-	let a = 1; // Default factor
-
-	// Find the largest square factor of b
+	let a = 1;
 	for (let i = Math.floor(Math.sqrt(b)); i >= 1; i--) {
 		if (b % (i * i) === 0) {
-			a = i; // a is the square root of the largest square factor
+			a = i;
 			break;
 		}
 	}
@@ -46,9 +44,7 @@ const generateRandomOperation = () => {
 	};
 };
 
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
-	// Select all span elements
 	const arr = [];
 	const ps = document.querySelectorAll("p");
 	for (let index = 0; index < ps.length; index++) {
@@ -72,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const dots = document.querySelectorAll(".dots");
 	const countdownElement = document.getElementById("countdown");
 	let countdownTime = 10,
-		intervalId; // 60 seconds countdown
+		intervalId;
 
 	const time_format = (ss) => {
 		if (ss < 60) return `${ss.toString().padStart(2, "0")} secondes`;
@@ -83,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			.padStart(2, "0")} secondes`;
 	};
 	const toggleHiddenClass = () => {
-		// Remove the hidden class from the current span and add it to all other spans
 		for (let index = 0; index < sol.length; index++) {
 			sol[index].classList.remove("hidden");
 			dots[index].classList.add("hidden");
@@ -96,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		countdownElement.textContent = `Les solutions seront affichées après ${ct} ...`;
 		countdownTime--;
 
-		// If countdown reaches 0, toggle the spans
 		if (countdownTime < 0) {
 			toggleHiddenClass();
 			clearInterval(intervalId);
