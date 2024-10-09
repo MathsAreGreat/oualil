@@ -651,11 +651,6 @@ p {
   color: rgb(239 59 45 / var(--tw-text-opacity));
 }
 
-.secondary {
-  --tw-text-opacity: 1;
-  color: rgb(77 124 15 / var(--tw-text-opacity));
-}
-
 .info {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
