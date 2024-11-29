@@ -12,39 +12,46 @@
 			{\ijk}{(O;\vec{i};\vec{j};\vec{k})}$ $\newcommand
 			{\ij}{(O;\vec{i};\vec{j})}$ $\newcommand {\ro}{(O;I;J)}$ $\newcommand
 			{\c}[2]{\textcolor{#1}{#2}}$ $\newcommand {\m}[1]{\mathscr{#1}}$
-			$\newcommand {\b}[1]{\mathbb{#1}}$ $\newcommand {\pr}[1]{\pbig{#1}}$
+			$\newcommand {\b}[1]{\mathbb{#1}}$ $\newcommand {\pr}[1]{\left(#1\right)}$
 			$\newcommand {\pbig}[1]{\Big(#1\Big)}$
 		</ins>
 	</head>
 
 	<body>
 		<div id="corps">
-			<div data="exercice 1" class="area exercice">
-				<p class="font-bold">
-					Écrire sous la forme $a^n$, où $a$ est un entier relatif et $n$ un
-					entier relatif :
+			<div data="énoncé de l'application" class="area exercice">
+				<p>
+					Soient : $$ \begin{aligned} 1\leq x \leq 2 \\ 3\leq y \leq 4 \\ -2\leq
+					z \leq -1 \\ -2\leq z \leq 3 \\ \end{aligned} $$
 				</p>
-				<div class="partie">
-					$$ \begin{aligned} A&=\dfrac{2^{15}}{2^{11}} & B&=\dfrac{(-7)^5}{7^3}
-					\\ C&=\dfrac{-3^2\times (-3)^3 \times 3^5}{3^3\times (-3)^4} &
-					D&=\dfrac{5^8\times \pbig{5^{13}}^2}{5^2\times \pbig{5^{15}}^3}
-					\end{aligned} $$
-				</div>
 			</div>
-
-			<div data="exercice 2" class="area exercice">
-				<p class="font-bold">
-					Calculer et écrire sous la forme d&#8217;une fraction irréductible
-					chacun des nombres suivants :
+			<div data="Séries d'opérations" class="area propertie">
+				<p class="partie">
+					On peut éliminer les parenthèses précédées par "+" sans autres
+					changements .
 				</p>
-				<div class="partie">
-					$$ \begin{aligned} A&=\pbig{\dfrac{5}{2}}^3 &
-					B&=\pbig{-\dfrac{3}{4}}^3 \\ C&=\pbig{\dfrac{3}{7}}^2\times
-					\pbig{-\dfrac{14}{5}}^2 & D&=\pbig{\dfrac{4}{7}}^3\times
-					\pbig{-\dfrac{7}{2}}^4 \end{aligned} $$
-				</div>
+				<p class="partie">
+					On peut éliminer les parenthèses précédées par "-" en changeant les
+					signes en de-dedans .
+				</p>
+			</div>
+			<div data="exemples" class="area exemple">
+				<p></p>
+			</div>
+			<div data="énoncé de l'application" class="area exercice">
+				<p>Éliminer les parentheses puis calculer :</p>
+				$$ \begin{aligned} A&=3-(2+4-7-5) \\ B&=5-\pbig{7-\pr{-2+3-5}-6} \\
+				\end{aligned} $$
+			</div>
+			<div data="solution de l'application" class="area solution">
+				<p>
+					$$ \begin{aligned} \quad A&=3-(2+4-7-5) \\ &=3-2-4+7+5 \\ &=1-4+7+5 \\
+					&=-3+12 \\ &=9 \\\\ \hline \\ \quad B&=5-\pbig{7-\pr{-2+3-5}-6} \\
+					&=5-7+\pr{-2+3-5}+6 \\ &=5-7-2+3-5+6 \\ &=-2+1+1 \\ &=0 \\
+					\end{aligned} $$
+				</p>
 			</div>
 		</div>
-		<script src="script.js?13"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
