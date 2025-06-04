@@ -1,3 +1,3 @@
 # Update-Repos
 
-- Last Commit : [2025-05-21 19:21:45] add an exercice html
+- Last Commit : [2025-06-04 12:23:35] adding some solutions to exam2025
